@@ -1,10 +1,10 @@
-﻿using OnlineStore.Model;
+using OnlineStore.Model;
 using Services.Interfaces;
 namespace Services.Impl
 {
     public class ProductService : IProductInterface
     {
-        public async Task<Product>GetProduct()
+        public async Task<Product> GetProduct()
         {
             return new Product()
             {
@@ -14,7 +14,6 @@ namespace Services.Impl
                 Description = "new laptop with best price"
             };
         }
-
         public async Task<List<Product>> GetProducts()
         {
             return new List<Product>()
